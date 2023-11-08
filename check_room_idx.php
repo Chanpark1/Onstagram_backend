@@ -22,9 +22,11 @@ $stmt -> execute();
 
 $result = $stmt -> get_result();
 
-while($row = $result -> fetch_assoc()){
-    
-}
+$row = $result -> fetch_assoc();
+
+$username = $row['username'];
+
+echo $username;
 
 
 ?>
